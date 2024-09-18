@@ -4,8 +4,9 @@ import { IoIosEye, IoIosEyeOff } from 'react-icons/io';
 import Logo from '../components/Logo';
 import useLogin from '../components/useLogin';
 import LoadingSpinner from '../components/LoadingSpinner';
-import MiniLoader from '../components/miniLoader';
+
 import { Link } from 'react-router-dom';
+import MiniSpinner from '../components/MiniSpinner';
 
 export default function Login() {
     const [toggle, setToggle] = useState(false);
@@ -61,7 +62,7 @@ export default function Login() {
           </p>
 
           <button className="capitalize bg-brand500 p-2 rounded-full text-white">
-            {isPending ? <MiniLoader /> : "continue"}
+            {isPending ? <MiniSpinner /> : "continue"}
           </button>
         </form>
       </div>
