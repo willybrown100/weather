@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import UserAvatar from './components/userAvatar'
-import Form from './components/Form';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SignUp from './pages/SignUp';
 import AppLayout from './components/AppLayout';
@@ -20,9 +18,6 @@ const queryClient = new QueryClient({
   },
 });
 export default function App() {
-   const [loading, setLoading] = useState(false);
-   const [cityName, setCityName] = useState("");
-
   return (
     <QueryClientProvider client={queryClient}>
       <WeatherProvider>
