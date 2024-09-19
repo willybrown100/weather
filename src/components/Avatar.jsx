@@ -28,7 +28,7 @@ export default function Avatar() {
         />
       </div>
       {open && (
-        <div className="absolute top-5">
+        <div className="absolute top-5 md:right-[0.1rem] z-10">
           <Modal />
         </div>
       )}
