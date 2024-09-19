@@ -39,7 +39,7 @@ export default function SignUp() {
               type="text"
               placeholder="enter your name "
               {...register("name")}
-              className="placeholder:capitalize w-full rounded-full p-2 bg-transparent border border-stone-300 "
+              className="placeholder:capitalize w-full rounded-full p-2 text-[16px] bg-transparent border border-stone-300 "
             />
           </div>
           <div className="flex flex-col gap-y-2">
