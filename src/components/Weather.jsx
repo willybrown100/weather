@@ -94,8 +94,8 @@ console.log(open)
             windSpeed={windSpeed.at(i)}
             humidity={humidity.at(i)}
             key={date}
-           
-       
+            bg={i === open ? "bg-[#535bf2] text-white " : "bg-white"}
+            text={i === open ? " text-white " : ""}
             today={i == 0}
             onClick={() =>
               handleClick(
@@ -105,7 +105,7 @@ console.log(open)
                   minTemp: minTemp.at(i),
                   humidity: humidity.at(i),
                   weathercode: weathercode.at(i),
-                  windSpeed:windSpeed.at(i)
+                  windSpeed: windSpeed.at(i),
                 },
                 i
               )
